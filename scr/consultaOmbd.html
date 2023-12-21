@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão Cinema</title>
+    <link rel="stylesheet" href="css/consultaOmbd.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/consultaOmbd.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="formulario" action=""> 
+        <div class="info">
+            <h1 class="title">Sessão Cinema!</h1>
+            <div class="inputs">
+                <div>
+                    <label for="titulo">Título do filme:</label>
+                    <input type="text" placeholder=" Ex: ghostbusters" id="titulo">
+                </div>
+                <div>
+                    <label for="diretor">Diretor:</label>
+                    <input type="text" id="diretor" readonly>
+                </div>
+                <div>
+                    <label for="genero">Gênero:</label>
+                    <input type="text" id="genero" readonly>
+                </div>
+                <div class="botoes">
+
+                    <button class="botao" type="button" onclick="guardioes()">
+                        Consulta OMDB
+                    </button>
+
+                    <button class="clear" onclick="limpar()">
+                        Limpar
+                    </button>
+                </div>
+            </div>
+        </div>    
+        
+        <img id="poster" src="" alt="Poster Filme">
+    </form>  
+   
+</body>
+</html>
